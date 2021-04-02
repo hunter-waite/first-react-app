@@ -27,7 +27,6 @@ function Form(props) {
 
     return (
         <form>
-            <input type="button" value="Submit" onClick={submitForm} />
             <label htmlFor="name">Name</label>
             <input
                 type="text"
@@ -42,6 +41,7 @@ function Form(props) {
                 id="job"
                 value={person.job}
                 onChange={handleChange} />
+            <input type="button" value="Submit" onClick={submitForm} />
         </form>
     );
 
